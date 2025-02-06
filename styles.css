@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*allows us to include the padding and border in an element's total width and height.*/
+
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: red;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+.logo{
+    font-size: 2em;
+    color: #fff;
+    user-select: none; /* Prevents text selection */
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+
+/*
+When to Use ::after:
+The ::after pseudo-element is useful for adding decorative elements or additional content that should appear after the main content of an element.
+Common use cases include adding icons, decorative lines, or other visual enhancements without adding extra HTML elements.
+It helps keep the HTML structure clean and allows for more flexible styling through CSS.*/
+.navigation a::after{
+    content: ''; /* Creates an empty content for the pseudo-element */
+    position: absolute; /* Positions the pseudo-element absolutely within the parent */
+    width: 100%; /* Sets the width of the pseudo-element to 100% of the parent */
+    height: 3px; /* Sets the height of the pseudo-element */
+    background: #fff; /* Sets the background color of the pseudo-element */
+    border-radius: 5px; /* Rounds the corners of the pseudo-element */
+}
+
+.navigation .btnLogin-popup {
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid #fff;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+}
+
+.navigation .btnLogin-popup:hover {
+ background: #fff;
+ color: #162938;
+}/*5:47*/
