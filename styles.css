@@ -8,13 +8,22 @@
 
 }
 
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;background: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
 header {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background: red;
+    /*background: red;    to let the img backgroud to stay of the body*/
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -44,10 +53,20 @@ It helps keep the HTML structure clean and allows for more flexible styling thro
 .navigation a::after{
     content: ''; /* Creates an empty content for the pseudo-element */
     position: absolute; /* Positions the pseudo-element absolutely within the parent */
+    left: 0;
+    bottom: -6px;
     width: 100%; /* Sets the width of the pseudo-element to 100% of the parent */
     height: 3px; /* Sets the height of the pseudo-element */
     background: #fff; /* Sets the background color of the pseudo-element */
     border-radius: 5px; /* Rounds the corners of the pseudo-element */
+    transform-origin: left; /* Sets the origin point for the transform property to the left side */
+    transform: scale(0); /* Initially scales the pseudo-element down to 0, making it invisible */
+    transition: .7s; /* Adds a smooth transition effect for the pseudo-element's transform property */
+} 
+
+.navigation a:hover::after {
+    transform: scale(1);/*resets the element to its original size, making it fully visible and interactive.*/
+
 }
 
 .navigation .btnLogin-popup {
@@ -66,4 +85,7 @@ It helps keep the HTML structure clean and allows for more flexible styling thro
 .navigation .btnLogin-popup:hover {
  background: #fff;
  color: #162938;
-}/*5:47*/
+}
+
+
+/*5:47*/
