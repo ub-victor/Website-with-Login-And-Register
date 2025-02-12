@@ -106,3 +106,9 @@ It helps keep the HTML structure clean and allows for more flexible styling thro
     width: 100%;
     padding: 40px;
 }
+
+.form-box h2 {
+    font-size:2em;
+    color: #162938;
+    text-align: center;
+}
