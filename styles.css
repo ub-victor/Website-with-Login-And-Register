@@ -130,3 +130,11 @@ It helps keep the HTML structure clean and allows for more flexible styling thro
     font-weight: 500; /* Sets the font weight of the label to 500 */
     pointer-events: none; /* Disables pointer events on the label, making it non-interactive */
 }
+
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+}
