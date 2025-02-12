@@ -121,24 +121,12 @@ It helps keep the HTML structure clean and allows for more flexible styling thro
     margin: 30px 0;
 }
 
-/* 
-This CSS rule styles the label element inside an element with the class "input-box". 
-- `position: absolute;`: Positions the label absolutely within its containing element.
-- `top: 50%;`: Vertically centers the label within its containing element.
-- `left: 10px;`: Positions the label 10 pixels from the left edge of its containing element.
-- `transform: translate(-50px);`: Moves the label 50 pixels to the left, adjusting its position for better alignment.
-- `font-size: 1em;`: Sets the font size of the label to 1em, which is relative to the font size of its parent element.
-- `color: #162938;`: Sets the text color of the label to a dark shade of blue.
-- `font-weight: 500;`: Sets the font weight of the label to 500, making it slightly bold.
-- `pointer-events: none;`: Makes the label non-interactive, so it does not respond to mouse events.
-*/
 .input-box label {
-    position: absolute;
-    top: 50%;
-    left: 10px;
-    transform: translate(-50px);
-    font-size: 1em;
-    color: #162938;
-    font-weight: 500;
-    pointer-events: none;
+    position: absolute; /* Positions the label absolutely within the parent */
+    top: 50%; /* Centers the label vertically within the parent */
+    left: 5px; /* Positions the label 5px from the left of the parent */
+    transform: translateY(-50%); /* Adjusts the label's position to be vertically centered */
+    color: #162938; /* Sets the text color of the label */
+    font-weight: 500; /* Sets the font weight of the label to 500 */
+    pointer-events: none; /* Disables pointer events on the label, making it non-interactive */
 }
