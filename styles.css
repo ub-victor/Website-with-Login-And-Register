@@ -129,6 +129,12 @@ It helps keep the HTML structure clean and allows for more flexible styling thro
     color: #162938; /* Sets the text color of the label */
     font-weight: 500; /* Sets the font weight of the label to 500 */
     pointer-events: none; /* Disables pointer events on the label, making it non-interactive */
+    transition: .5s;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label{
+    top: -5px;
 }
 
 .input-box input{
@@ -137,6 +143,10 @@ It helps keep the HTML structure clean and allows for more flexible styling thro
     background: transparent;
     border: none;
     outline: none;
+    font-size: 1em;
+    color: #162938;
+    font-weight: 600;
+    padding: 0 35px 0 5px;
 }
 
 .input-box .icon{
