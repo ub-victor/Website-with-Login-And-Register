@@ -103,5 +103,6 @@ It helps keep the HTML structure clean and allows for more flexible styling thro
 }
 
 .wrapper .form-box{
-    
+    width: 100%;
+    padding: 40px;
 }
