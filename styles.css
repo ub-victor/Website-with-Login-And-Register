@@ -86,3 +86,22 @@ It helps keep the HTML structure clean and allows for more flexible styling thro
  background: #fff;
  color: #162938;
 }
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    /* Adds a shadow effect around the wrapper element */
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .form-box{
+    
+}
